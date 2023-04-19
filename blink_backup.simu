@@ -1,5 +1,9 @@
 <circuit noLinAcc="5" type="simulide_0.4" Speed_per="100" Simu_Step_nS="1000" animate="0" Speed_sps="1000000" reactStep="50">
 
+Unique  Id: Probe-953: 
+Circuit Id: Probe-953
+<item rotation="-45" labelx="16" Threshold="2.5" valLabely="0" valLabRot="45" id="Probe-953" vflip="1" labely="-16" boardRot="-1e+06" circPos="0,0" Show_volt="true" mainComp="false" itemtype="Probe" valLabelx="16" labelrot="45" circRot="9.7409906727e-314" x="-648" objectName="Probe-953" Show_id="false" y="-8" hflip="1" boardPos="-1e+06,-1e+06"/>
+
 Unique  Id: BcdTo7S-551: 
 Circuit Id: BcdTo7S-609
 <item rotation="0" Out_High_V="5" labelx="-16" Inverted="false" valLabely="0" valLabRot="0" id="BcdTo7S-609" vflip="1" labely="-24" Input_Low_V="2.5" boardRot="-1e+06" circPos="0,0" Out_Imped="40" mainComp="false" itemtype="BcdTo7S" valLabelx="0" labelrot="0" circRot="1.6068698128834734e-273" Input_High_V="2.5" Input_Imped="1e+14" x="-628" objectName="BcdTo7S-551" Out_Low_V="0" Tristate="true" Show_id="false" y="-44" hflip="1" boardPos="-1e+06,-1e+06"/>
@@ -66,7 +70,7 @@ Circuit Id: Push-45
 
 Unique  Id: Probe-89: 
 Circuit Id: Probe-56
-<item rotation="-45" labelx="16" Threshold="2.5" valLabely="0" valLabRot="45" id="Probe-56" vflip="1" labely="-16" boardRot="-1e+06" circPos="0,0" Show_volt="true" mainComp="false" itemtype="Probe" valLabelx="16" labelrot="45" circRot="0" x="-608" objectName="Probe-89" Show_id="false" y="4" hflip="1" boardPos="-1e+06,-1e+06"/>
+<item rotation="-45" labelx="16" Threshold="2.5" valLabely="0" valLabRot="45" id="Probe-56" vflip="1" labely="-16" boardRot="-1e+06" circPos="0,0" Show_volt="true" mainComp="false" itemtype="Probe" valLabelx="16" labelrot="45" circRot="0" x="-596" objectName="Probe-89" Show_id="false" y="0" hflip="1" boardPos="-1e+06,-1e+06"/>
 
 Unique  Id: Ground-90: 
 Circuit Id: Ground-48
@@ -286,7 +290,7 @@ Circuit Id: Probe-853
 
 Unique  Id: Probe-866: 
 Circuit Id: Probe-866
-<item rotation="-45" labelx="16" Threshold="2.5" valLabely="0" valLabRot="45" id="Probe-866" vflip="1" labely="-16" boardRot="-1e+06" circPos="0,0" Show_volt="true" mainComp="false" itemtype="Probe" valLabelx="16" labelrot="45" circRot="2.121995861e-314" x="-664" objectName="Probe-866" Show_id="false" y="-32" hflip="1" boardPos="-1e+06,-1e+06"/>
+<item rotation="-45" labelx="16" Threshold="2.5" valLabely="0" valLabRot="45" id="Probe-866" vflip="1" labely="-16" boardRot="-1e+06" circPos="0,0" Show_volt="true" mainComp="false" itemtype="Probe" valLabelx="16" labelrot="45" circRot="2.121995861e-314" x="-652" objectName="Probe-866" Show_id="false" y="-68" hflip="1" boardPos="-1e+06,-1e+06"/>
 
 Unique  Id: Seven Segment-891: 
 Circuit Id: Seven Segment-891
