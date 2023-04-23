@@ -4,7 +4,7 @@
 
 
 //Definir los estados
-#define INICIO 0
+#define INICIO 0   //Estado donde inicia la lavadora, espera que se presione el boton inicio.
 #define SUMI_b 1
 #define SUMI_m 2
 #define SUMI_a 3
@@ -29,34 +29,31 @@ int state;
 int count = 0; //contador
 int delay = 60; // 1 segundo
 int valid;
-int pausa;
-int reanudar;
 
 void fsm();
 void segmento();
 
-
-void pinchange_setup(void)
+//En esta funcion habilito las interrupciones, pin change interrupt y "".
+void interrupciones(void)
 {
-    PCMSK |= (1<<PCINT0); //Habilita el PB4 para LED //Eneable PB0 como la fuente PCIN
+    PCMSK  |= (1<<PCINT0); //Habilita el PB4 para LED //Eneable PB0 como la fuente PCIN
     PCMSK1 |= (1<<PCINT9);
-    GIMSK |= (1<<INT1)|(1<<INT0)|(1<<PCIE0)|(1<<PCIE1); //Eneable pin change interrupt requests, habilito INT0
-    MCUCR |= (1<<ISC01)|(1<<ISC10)|(1<<ISC11); 
-    sei(); //Enable global interrupts
+    GIMSK  |= (1<<INT1)|(1<<INT0)|(1<<PCIE0)|(1<<PCIE1); //Eneable pin change interrupt requests, habilito INT0
+    MCUCR  |= (1<<ISC01)|(1<<ISC10)|(1<<ISC11); 
+    sei(); //Habilito interrupciones globales
 }
 
-
- 
+//Programa principal 
 int main (void)
 {
-  TCNT0 = 0;  // counter0 en 0
-  TIMSK |= (1 << TOIE0); // Habilito interrupcion por desbordamiento de timer0.
+    TCNT0 = 0;  // counter0 en 0
+    TIMSK |= (1 << TOIE0); // Habilito interrupcion por desbordamiento de timer0.
 
   // Interrupciones en delay configuracion
-  TCCR0A = 0x00; // Registro de control para el contador/temporizador A
-  TCCR0B = 0x00; // Registro de control para el contador/temporizador B
-  TCCR0B |= (1 << CS02); // prescaler f/1024
-  TCCR0B |= (1 << CS00);
+    TCCR0A = 0x00; // Registro de control para el contador/temporizador A
+    TCCR0B = 0x00; // Registro de control para el contador/temporizador B
+    TCCR0B |= (1 << CS02); // prescaler f/1024
+    TCCR0B |= (1 << CS00);
    
    // DDRB |= (1<<PB3); 
    // DDRB |= (1<<PD0); 
@@ -66,7 +63,7 @@ int main (void)
     //PORTB |= (1<<PB0)|(1<<PB2); //Activacion de la resistencia pull-up interna para conectar un push button, pone esos pines como salidas.
     PORTB = 0x01;//0101, B0 Y B2
     //PORTA = 0x04;
-    pinchange_setup();
+    interrupciones();
 
 //START
 
@@ -107,8 +104,7 @@ void fsm(){
                 PORTB |=(1<<PB6);
                  _delay_ms(500);
                 nxt_state = SUMI_a;
-        } else
-            nxt_state = INICIO;   
+            }
         }
         break;
     case SUMI_b:        //Estado sumergir nivel bajo
@@ -118,6 +114,7 @@ void fsm(){
         if (valid == 1){
             nxt_state = LAVA_b;
             PORTB &=(0<<PB4); 
+        }
         break;
     case LAVA_b:      //Estado lavado, nivel bajo.  //
         delay = 150; 
@@ -194,7 +191,7 @@ void fsm(){
         }
         break;
     case LAVA_a:      //Estado lavado, nivel alto.
-        delay = 570;
+        delay = 480;
         PORTB |=(1<<PB3); //B3, LAVAR
         _delay_ms(500);
         if (valid == 1){
@@ -228,9 +225,8 @@ void fsm(){
         break;
         }        
 }
-}
 
-//Interrupciones
+//Funciones de las interrupciones
 
 //Boton nivel bajo 
 ISR (PCINT0_vect) //Interrupt service routine activada por PCINT0 //PB0 
@@ -272,6 +268,7 @@ ISR (INT1_vect) //PB1
         }      
 }
 
+//Time overflow, contador para los cambios de
 ISR(TIMER0_OVF_vect){
     
     if(count == delay){
@@ -285,28 +282,3 @@ ISR(TIMER0_OVF_vect){
 
 
 
-
-//Bucle a la inversa
-//for(int i =10; i>1;i-)
-void segmento(unsigned int num)
-{   
-        if (num==9){
-			PORTD |= (1<<PD0);
-            PORTA |= (1<<PA0);
-            PORTD |= (0<<PD4);
-            PORTA |= (0<<PA2);
-	    }
-        else if (num==8){
-			PORTD |= (0<<PD0);
-            PORTA |= (0<<PA0);
-            PORTD |= (0<<PD4);
-            PORTA |= (1<<PA2);
-	    }
-        else if (num==7){
-			PORTD |= (1<<PD0);
-            PORTA |= (0<<PA0);
-            PORTD |= (1<<PD4);
-            PORTA |= (1<<PA2);
-	    }
-        
-}
