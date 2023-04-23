@@ -1,12 +1,20 @@
 <circuit Simu_Step_nS="1000" reactStep="50" noLinAcc="5" Speed_per="100" animate="0" type="simulide_0.4" Speed_sps="1000000">
 
+Unique  Id: Probe-1388: 
+Circuit Id: Probe-1388
+<item labelx="16" x="-304" mainComp="false" circRot="0" boardRot="-1e+06" Show_id="false" labely="-16" y="348" valLabely="0" id="Probe-1388" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="16" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1388"/>
+
+Unique  Id: Probe-1387: 
+Circuit Id: Probe-1387
+<item labelx="16" x="-244" mainComp="false" circRot="0" boardRot="-1e+06" Show_id="false" labely="-16" y="316" valLabely="0" id="Probe-1387" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="16" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1387"/>
+
 Unique  Id: Probe-1386: 
 Circuit Id: Probe-1386
-<item labelx="16" x="-156" mainComp="false" circRot="3.377622732111824e-124" boardRot="-1e+06" Show_id="false" labely="-16" y="220" valLabely="-63" id="Probe-1386" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="-24" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1386"/>
+<item labelx="16" x="-248" mainComp="false" circRot="3.377622732111824e-124" boardRot="-1e+06" Show_id="false" labely="-16" y="188" valLabely="-63" id="Probe-1386" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="-24" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1386"/>
 
 Unique  Id: Probe-1385: 
 Circuit Id: Probe-1385
-<item labelx="16" x="-212" mainComp="false" circRot="-5.544387328872037e+303" boardRot="-1e+06" Show_id="false" labely="-16" y="256" valLabely="0" id="Probe-1385" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="16" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1385"/>
+<item labelx="16" x="-212" mainComp="false" circRot="-5.544387328872037e+303" boardRot="-1e+06" Show_id="false" labely="-16" y="288" valLabely="0" id="Probe-1385" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="16" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1385"/>
 
 Unique  Id: Probe-1384: 
 Circuit Id: Probe-1384
@@ -14,7 +22,7 @@ Circuit Id: Probe-1384
 
 Unique  Id: Probe-1340: 
 Circuit Id: Probe-1340
-<item labelx="16" x="-116" mainComp="false" circRot="2.1219959006e-314" boardRot="-1e+06" Show_id="false" labely="-16" y="156" valLabely="0" id="Probe-1340" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="16" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1340"/>
+<item labelx="16" x="-204" mainComp="false" circRot="2.1219959006e-314" boardRot="-1e+06" Show_id="false" labely="-16" y="252" valLabely="0" id="Probe-1340" boardPos="-1e+06,-1e+06" circPos="0,0" Threshold="2.5" Show_volt="true" labelrot="45" itemtype="Probe" rotation="-45" valLabelx="16" hflip="1" valLabRot="45" vflip="1" objectName="Probe-1340"/>
 
 Unique  Id: Led-1298: 
 Circuit Id: Led-3
@@ -242,7 +250,7 @@ Circuit Id: Push-45
 
 Unique  Id: attiny4313-9: 
 Circuit Id: attiny4313-1
-<item labelx="0" Name="" x="-552" mainComp="false" circRot="6.33316467e-316" boardRot="-1e+06" Show_id="true" labely="-20" y="92" valLabely="0" id="attiny4313-1" boardPos="-1e+06,-1e+06" circPos="0,0" varList=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," labelrot="0" Logic_Symbol="false" itemtype="AVR" rotation="0" valLabelx="0" hflip="1" eeprom="255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255" Program="Laboratorio2/Laboratorio_2/main.hex" Auto_Load="false" valLabRot="0" vflip="1" Mhz="16" objectName="attiny4313-9"/>
+<item labelx="0" Name="" x="-552" mainComp="false" circRot="6.33316467e-316" boardRot="-1e+06" Show_id="true" labely="-20" y="92" valLabely="0" id="attiny4313-1" boardPos="-1e+06,-1e+06" circPos="0,0" varList=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,," labelrot="0" Logic_Symbol="false" itemtype="AVR" rotation="0" valLabelx="0" hflip="1" eeprom="255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255" Program="../../main.hex" Auto_Load="false" valLabRot="0" vflip="1" Mhz="16" objectName="attiny4313-9"/>
 
 Unique  Id: TextComponent-286: 
 Circuit Id: TextComponent-286

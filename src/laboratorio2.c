@@ -209,7 +209,7 @@ void fsm(){
         }  
         break;     
     case CENT_a:    //Estado Centrigugar, 9 segundos nivel alto.
-        delay = 480;
+        delay = 420;
         PORTD |=(1<<PD5); 
         _delay_ms(500);
          if (valid == 1){
